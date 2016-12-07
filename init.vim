@@ -22,7 +22,6 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'quramy/tsuquyomi'
 Plug 'eslint/eslint'
 Plug 'chiel92/vim-autoformat'
-Plug 'yggdroot/indentline'
 
 call plug#end()
 
@@ -62,11 +61,4 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let NERDTreeShowHidden=1
-
-" let g:indentLine_color_dark = 2
-" let g:indentLine_color_tty_dark = 2
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
-let g:indentLine_char = '┊'
-" let g:indentLine_enabled = 0
 
