@@ -43,6 +43,7 @@ set background=dark
 colorscheme onedark
 hi SpecialKey ctermfg=8
 set termguicolors
+set cc=80
 
 " 1 tab == 2 spaces
 set shiftwidth=2
