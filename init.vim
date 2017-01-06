@@ -13,15 +13,13 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
-Plug 'leafgarland/typescript-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'stanangeloff/php.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'chrisbra/csv.vim'
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'quramy/tsuquyomi'
 Plug 'eslint/eslint'
 Plug 'chiel92/vim-autoformat'
+Plug 'mhartington/deoplete-typescript'
 
 call plug#end()
 
@@ -62,3 +60,6 @@ let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let NERDTreeShowHidden=1
 
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#enable_refresh_always = 1
