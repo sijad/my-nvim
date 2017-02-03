@@ -107,3 +107,4 @@ function! airline#themes#onedark#refresh()
 endfunction
 
 call airline#themes#onedark#refresh()
+
