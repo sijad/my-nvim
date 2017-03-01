@@ -21,6 +21,8 @@ Plug 'eslint/eslint'
 Plug 'chiel92/vim-autoformat'
 Plug 'mhartington/deoplete-typescript'
 Plug 'zchee/deoplete-clang'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
