@@ -71,3 +71,8 @@ let g:deoplete#sources#clang#clang_header = '/usr/lib/llvm-3.8/lib/clang'
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn))|(node_modules|vendor)$',
+  \ 'file': '\v\.(exe|so|dll|zip)$',
+  \ }
