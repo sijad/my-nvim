@@ -14,7 +14,8 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'stanangeloff/php.vim'
-Plug 'shawncplus/phpcomplete.vim'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
 Plug 'eslint/eslint'
 Plug 'chiel92/vim-autoformat'
@@ -76,3 +77,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn))|(node_modules|vendor)$',
   \ 'file': '\v\.(exe|so|dll|zip)$',
   \ }
+
+let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+let g:deoplete#ignore_sources.php = ['omni']
