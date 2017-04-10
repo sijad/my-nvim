@@ -23,6 +23,7 @@ Plug 'mhartington/deoplete-typescript'
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'vimwiki/vimwiki'
+Plug 'mhinz/vim-grepper'
 
 call plug#end()
 
@@ -80,3 +81,5 @@ let g:ctrlp_custom_ignore = {
 
 let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
 let g:deoplete#ignore_sources.php = ['omni']
+
+nmap gs  <plug>(GrepperOperator)
