@@ -14,7 +14,6 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'stanangeloff/php.vim'
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
 Plug 'eslint/eslint'
@@ -40,7 +39,7 @@ set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨," eol:↲,nb
 set list
 
 " Theme
-" let g:onedark_termcolors=16
+" let g:onedark_termcolors=256
 set background=dark
 colorscheme onedark
 hi SpecialKey ctermfg=8
@@ -83,3 +82,5 @@ let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
 let g:deoplete#ignore_sources.php = ['omni']
 
 nmap gs  <plug>(GrepperOperator)
+
+set mouse=
