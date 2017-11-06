@@ -31,8 +31,6 @@ set history=1000
 
 set number
 
-set timeout timeoutlen=1500
-
 set showbreak=↪\ 
 set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨," eol:↲,nbsp:·,
 set list
