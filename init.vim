@@ -1,3 +1,5 @@
+set shell=bash
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -9,13 +11,12 @@ Plug 'sheerun/vim-polyglot'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
+Plug 'neomake/neomake'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'stanangeloff/php.vim'
 Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
-Plug 'eslint/eslint'
 Plug 'chiel92/vim-autoformat'
 Plug 'mhartington/deoplete-typescript'
 
@@ -50,6 +51,10 @@ let g:airline_theme = 'onedark'
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_refresh_always = 1
+
+let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
+call neomake#configure#automake('w')
 
 nmap <leader>f :GFiles<CR>
 nmap <leader>F :GFiles?<CR>
