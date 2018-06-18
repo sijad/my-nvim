@@ -20,6 +20,7 @@ Plug 'chrisbra/csv.vim'
 Plug 'chiel92/vim-autoformat'
 Plug 'mhartington/deoplete-typescript'
 Plug 'w0rp/ale'
+Plug 'racer-rust/vim-racer'
 
 call plug#end()
 
