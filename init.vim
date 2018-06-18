@@ -19,6 +19,7 @@ Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
 Plug 'chiel92/vim-autoformat'
 Plug 'mhartington/deoplete-typescript'
+Plug 'w0rp/ale'
 
 call plug#end()
 
