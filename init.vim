@@ -3,6 +3,7 @@ set shell=bash
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
@@ -19,7 +20,7 @@ Plug 'chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 Plug 'racer-rust/vim-racer'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'wokalski/autocomplete-flow'
 
 call plug#end()
 
@@ -53,9 +54,16 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_refresh_always = 1
 
+let g:ale_completion_enabled = 1
+
 nmap <leader>f :GFiles<CR>
 nmap <leader>F :GFiles?<CR>
 
 nmap gs  <plug>(GrepperOperator)
 
 set mouse=
+
+let g:ale_linters = {
+\   'javascript': ['eslint', 'flow'],
+\   'javascript.jsx': ['eslint', 'flow'],
+\}
