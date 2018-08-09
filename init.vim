@@ -3,7 +3,6 @@ set shell=bash
 " Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
@@ -17,9 +16,10 @@ Plug 'stanangeloff/php.vim'
 Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
 Plug 'chiel92/vim-autoformat'
-Plug 'mhartington/deoplete-typescript'
 Plug 'w0rp/ale'
 Plug 'racer-rust/vim-racer'
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
