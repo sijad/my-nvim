@@ -62,6 +62,7 @@ nmap <leader>F :GFiles?<CR>
 nmap gs  <plug>(GrepperOperator)
 
 set mouse=
+set completeopt-=preview
 
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
