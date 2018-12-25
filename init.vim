@@ -3,7 +3,6 @@ set shell=bash
 " Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go'
@@ -11,10 +10,8 @@ Plug 'sheerun/vim-polyglot'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
-Plug 'zchee/deoplete-go', { 'do': 'make' }
 Plug 'tpope/vim-surround'
 Plug 'stanangeloff/php.vim'
-Plug 'padawan-php/deoplete-padawan'
 Plug 'chrisbra/csv.vim'
 Plug 'chiel92/vim-autoformat'
 Plug 'w0rp/ale'
