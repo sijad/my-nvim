@@ -5,17 +5,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-" Plug 'fatih/vim-go'
 Plug 'sheerun/vim-polyglot'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'stanangeloff/php.vim'
 Plug 'chrisbra/csv.vim'
-Plug 'chiel92/vim-autoformat'
 Plug 'w0rp/ale'
-Plug 'racer-rust/vim-racer'
 Plug 'pangloss/vim-javascript'
 
 call plug#end()
@@ -50,6 +46,7 @@ let g:javascript_plugin_flow = 1
 
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
+let g:ale_sign_column_always = 1
 let g:ale_go_golangci_lint_options = '--enable-all
 \ --disable typecheck
 \ --disable gochecknoglobals
