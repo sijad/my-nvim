@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 Plug 'sheerun/vim-polyglot'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -63,11 +63,15 @@ nmap gs  <plug>(GrepperOperator)
 set mouse=
 set completeopt-=preview
 
-let g:ale_linters = {
+let b:ale_linters = {
 \   'javascript': ['eslint', 'flow-language-server'],
+\   'javascript.jsx': ['eslint', 'flow-language-server'],
+\   'go': ['golangserver', 'golangci-lint'],
 \}
 
 let g:ale_fixers = {
+\   'go': ['goimports', 'gofmt'],
 \   'javascript': ['prettier'],
+\   'javascript.jsx': ['prettier'],
 \   'css': ['prettier'],
 \}
