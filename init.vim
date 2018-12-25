@@ -19,8 +19,6 @@ Plug 'chrisbra/csv.vim'
 Plug 'chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 Plug 'racer-rust/vim-racer'
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
-Plug 'wokalski/autocomplete-flow'
 Plug 'pangloss/vim-javascript'
 
 call plug#end()
@@ -57,6 +55,7 @@ let g:deoplete#enable_refresh_always = 1
 
 let g:javascript_plugin_flow = 1
 
+let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 
 nmap <leader>f :GFiles<CR>
