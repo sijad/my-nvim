@@ -46,14 +46,14 @@ set tabstop=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'onedark'
 
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_refresh_always = 1
-
 let g:javascript_plugin_flow = 1
 
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
+let g:ale_go_golangci_lint_options = '--enable-all
+\ --disable typecheck
+\ --disable gochecknoglobals
+\ --disable gochecknoinits'
 
 nmap <leader>f :GFiles<CR>
 nmap <leader>F :GFiles?<CR>
@@ -63,10 +63,10 @@ nmap gs  <plug>(GrepperOperator)
 set mouse=
 set completeopt-=preview
 
-let b:ale_linters = {
+let g:ale_linters = {
 \   'javascript': ['eslint', 'flow-language-server'],
 \   'javascript.jsx': ['eslint', 'flow-language-server'],
-\   'go': ['golangserver', 'golangci-lint'],
+\   'go': ['golangserver', 'gotype', 'golint', 'golangci-lint'],
 \}
 
 let g:ale_fixers = {
