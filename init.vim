@@ -21,6 +21,7 @@ Plug 'w0rp/ale'
 Plug 'racer-rust/vim-racer'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'wokalski/autocomplete-flow'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
@@ -53,6 +54,8 @@ let g:airline_theme = 'onedark'
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_refresh_always = 1
+
+let g:javascript_plugin_flow = 1
 
 let g:ale_fix_on_save = 1
 
