@@ -54,7 +54,6 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_refresh_always = 1
 
-let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 
 nmap <leader>f :GFiles<CR>
@@ -66,12 +65,10 @@ set mouse=
 set completeopt-=preview
 
 let g:ale_linters = {
-\   'javascript': ['eslint', 'flow'],
-\   'javascript.jsx': ['eslint', 'flow'],
+\   'javascript': ['eslint', 'flow-language-server'],
 \}
 
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
-\   'javascript.jsx': ['prettier'],
 \   'css': ['prettier'],
 \}
