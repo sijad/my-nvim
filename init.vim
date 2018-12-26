@@ -38,6 +38,7 @@ set cc=80
 set shiftwidth=2
 set tabstop=2
 
+
 " Plugins
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'onedark'
@@ -58,7 +59,7 @@ nmap <leader>F :GFiles?<CR>
 nmap gs  <plug>(GrepperOperator)
 
 set mouse=
-set completeopt-=preview
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow-language-server'],
