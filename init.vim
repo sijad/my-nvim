@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'chrisbra/csv.vim'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
