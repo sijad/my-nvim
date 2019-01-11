@@ -69,7 +69,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   'go': ['goimports', 'gofmt'],
-\   'javascript': ['prettier'],
-\   'javascript.jsx': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\   'javascript.jsx': ['prettier', 'eslint'],
 \   'css': ['prettier'],
 \}
