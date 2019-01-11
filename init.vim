@@ -72,5 +72,6 @@ let g:ale_fixers = {
 \   'go': ['goimports', 'gofmt'],
 \   'javascript': ['prettier', 'eslint'],
 \   'javascript.jsx': ['prettier', 'eslint'],
+\   'typescript': ['tslint'],
 \   'css': ['prettier'],
 \}
