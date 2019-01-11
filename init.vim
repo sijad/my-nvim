@@ -65,7 +65,7 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow-language-server'],
 \   'javascript.jsx': ['eslint', 'flow-language-server'],
-\   'go': ['golangserver', 'gotype', 'golint', 'golangci-lint'],
+\   'go': ['bingo', 'gotype', 'golint', 'golangci-lint'],
 \}
 
 let g:ale_fixers = {
