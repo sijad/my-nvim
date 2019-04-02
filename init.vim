@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug '~/.fzf' | Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -72,6 +72,8 @@ let g:ale_fixers = {
 \   'go': ['goimports', 'gofmt'],
 \   'javascript': ['prettier', 'eslint'],
 \   'javascript.jsx': ['prettier', 'eslint'],
-\   'typescript': ['tslint'],
+\   'typescript': ['eslint', 'tslint'],
+\   'json': ['prettier'],
 \   'css': ['prettier'],
+\   'php': ['php-cs-fixer'],
 \}
